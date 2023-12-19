@@ -19,7 +19,7 @@ function App() {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('https://subtle-syrniki-90dc7b.netlify.app/enroll', {
+      const response = await fetch('https://yogaapplicationformbackend.onrender.com/enroll', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
