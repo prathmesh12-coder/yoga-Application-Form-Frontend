@@ -3,55 +3,84 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  /* background-color: #f2f2f2; */
-  /* background-color: black; */
- 
-  color: #333;
-  background-image: url('https://unsplash.com/photos/woman-doing-yoga-meditation-on-brown-parquet-flooring-NTyBbu66_SI');
+  height: 120vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://unsplash.com/photos/woman-doing-yoga-meditation-on-brown-parquet-flooring-NTyBbu66_SI');
   background-size: cover;
   background-position: center;
+  color: #fff;
 }
 
 .header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .form {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width:500px;
+  max-width: 700px;
   text-align: left;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: black;
+}
+
+.form:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
 }
 
 .form-label {
   display: block;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .form-input {
-  width: 100%;
-  padding: 8px;
+  margin-top: 8px;
+  width: 90%;
+  padding: 12px;
   font-size: 1rem;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #4caf50;
 }
 
 .form-button {
   background-color: #4caf50;
   color: #fff;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 212px;
 }
 
 .form-button:hover {
   background-color: #45a049;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

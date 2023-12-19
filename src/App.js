@@ -50,11 +50,13 @@ function App() {
       <form className="form">
         <label className="form-label">
           Name:
+          <br/>
           <input type="text" name="name" onChange={handleInputChange} className="form-input" />
         </label>
         <br />
         <label className="form-label">
           Age:
+          <br/>
           <input type="number" name="age" onChange={handleInputChange} className="form-input" />
         </label>
         <br />
@@ -65,11 +67,13 @@ function App() {
         <br />
         <label className="form-label">
           Email:
+          <br/>
           <input type="email" name="email" onChange={handleInputChange} className="form-input" />
         </label>
         <br />
         <label className="form-label">
           Batch:
+          <br/>
           <select name="batch" onChange={handleInputChange} className="form-input">
             <option value="6-7AM">6-7AM</option>
             <option value="7-8AM">7-8AM</option>
