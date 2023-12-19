@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Yoga Admission Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple Yoga Admission Form built using React for the frontend and Node.js with Express and MongoDB for the backend. The form allows users to enroll in monthly yoga classes, providing information such as name, age, mobile number, email, and preferred batch.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User-friendly form with validation for age, mobile number, and email.
+- Backend server to handle form submissions and store data in MongoDB.
+- Basic error handling and feedback to the user.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend (React)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository:**
 
-### `npm test`
+    ```bash
+    git clone https://github.com/your-username/yoga-admission-form.git
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Navigate to the frontend directory:**
 
-### `npm run build`
+    ```bash
+    cd yoga-admission-form
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Install dependencies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Run the React app:**
 
-### `npm run eject`
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    The app will be accessible at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend (Node.js with Express and MongoDB)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Navigate to the backend directory:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    cd backend
+    ```
 
-## Learn More
+2. **Install dependencies:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm install
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Run the Node.js server:**
 
-### Code Splitting
+    ```bash
+    node server.js
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    The server will be accessible at `http://localhost:3001`.
 
-### Analyzing the Bundle Size
+## Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- MongoDB is used as the database to store participant information.
+- Ensure that you have MongoDB installed and running locally.
 
-### Making a Progressive Web App
+  ER Diagram for our database of yoga admission `https://drive.google.com/file/d/1JTimJG4zWqWrdoU-l3kHfiucSvnS1Nuc/view?usp=sharing`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Additional Information
 
-### Advanced Configuration
+- The form includes fields for name, age, mobile number, email, and preferred batch.
+- Validation is implemented to ensure age is between 18 and 65.
+- Mobile number input is of type "tel" for better mobile support.
+- Email input is of type "email" for basic email validation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Future Improvements
 
-### Deployment
+- Implement secure handling of sensitive information (e.g., API keys, database credentials).
+- Enhance form validation and error handling.
+- Add user authentication for better security.
+- Implement a proper payment system.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contribute and make this project even better!
